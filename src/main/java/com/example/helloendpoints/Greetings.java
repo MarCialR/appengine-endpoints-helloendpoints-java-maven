@@ -58,6 +58,12 @@ public class Greetings {
     return response;
   }
 //[END multiplygreetings]
+  
+  @ApiMethod(name = "greetings.oleta", httpMethod = "post")
+  public Free set(Free resource){
+	  return new Free("received " + resource.getMessage());
+	  
+  }
 //[START auth] 
 
   @ApiMethod(name = "greetings.authed", path = "hellogreeting/authed")
